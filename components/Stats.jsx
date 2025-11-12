@@ -8,15 +8,15 @@ const state = [
     text: "Years of Experience",
   },
   {
-    num: 18,
+    num: 32,
     text: "Projects Completed",
   },
   {
-    num: 4,
-    text: "Technologies Mastered",
+    num: 18,
+    text: "Total Skills",
   },
   {
-    num: 45,
+    num: 123,
     text: "Code Commits",
   },
 ];

@@ -11,29 +11,51 @@ import {
   TooltipProvider,
 } from "@/components/ui/tooltip";
 import Link from "next/link";
-import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
-  {
+    {
     num: "01",
-    category: "Frontend",
-    Title: "Nike",
-    description: "Developed a project for Nike website",
+    category: "Full Stack",
+    Title: "Quick Chat",
+    description: "Developed a project for chat between users",
     stack: [
       { name: "Html5" },
       { name: "Css3" },
       {name:"Tailwindcss"},
       { name: "Javascript" },
       { name: "React.js" },
+      { name: "Node.Js" },
+      { name: "Socket.io" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
     ],
-    image: "/assets/work/Nike.PNG",
-    live: "https://nike-eight-weld.vercel.app/",
-    github: "https://github.com/MahmoudGado1/Nike",
+    image: "/assets/work/chat.PNG",
+    live: "https://quickchat-puce.vercel.app/",
+    github: "https://github.com/MahmoudGado1/Quick-Chat",
   },
   {
     num: "02",
-    category: "Frontend",
+    category: "Full Stack",
+    Title: "LMS",
+    description: "Developed a project for manage learning process for students",
+    stack: [
+      { name: "Html5" },
+      { name: "Css3" },
+      {name:"Tailwindcss"},
+      { name: "Javascript" },
+      { name: "React.js" },
+      { name: "Node.Js" },
+      { name: "MongoDB" },
+      { name: "Express.js" },
+    ],
+    image: "/assets/work/lms.PNG",
+    live: "",
+    github: "https://github.com/MahmoudGado1/Mern-LMS",
+  },
+  {
+    num: "03",
+    category: "Full Stack",
     Title: "Skin Cancer",
     description: "Developed a project for detect Skin Cancer  ",
     stack: [
@@ -41,13 +63,15 @@ const projects = [
       { name: "Css3" },
       { name: "Javascript" },
       { name: "React.js" },
+      { name: "django" },
+      { name: "Python" },
     ],
     image: "/assets/work/Skin.PNG",
     live: "https://skin-cancer-1.vercel.app/",
     github: "https://github.com/MahmoudGado1/Skin-Cancer",
   },
   {
-    num: "03",
+    num: "04",
     category: "Frontend",
     Title: "Food Order",
     description: "Developed a project for order food",
@@ -63,7 +87,7 @@ const projects = [
     github: "https://github.com/MahmoudGado1/Food-Order-AddToChart",
   },
   {
-    num: "04",
+    num: "05",
     category: "Frontend",
     Title: "Todo List",
     description: "Todo List for add tasks",
@@ -78,7 +102,7 @@ const projects = [
     github: "https://github.com/MahmoudGado1/To-Do-List-APP",
   },
   {
-    num: "05",
+    num: "06",
     category: "Full Stack",
     Title: "E-commerce Platform",
     description: "Developed a full-featured e-commerce platform.",
@@ -94,10 +118,10 @@ const projects = [
     ],
     image: "/assets/work/ecomm.PNG",
     live: "",
-    github: "",
+    github: "https://github.com/MahmoudGado1/MERN-Ecommerce",
   },
   {
-    num: "06",
+    num: "07",
     category: "Full Stack",
     Title: "Hospital Management System",
     description: "Developed a hospital system for manage tasks.",
@@ -114,7 +138,25 @@ const projects = [
     live: "",
     github: "https://github.com/MahmoudGado1/Hospital-System",
   }
+  ,
+    {
+    num: "08",
+    category: "Frontend",
+    Title: "Nike",
+    description: "Developed a project for Nike website",
+    stack: [
+      { name: "Html5" },
+      { name: "Css3" },
+      {name:"Tailwindcss"},
+      { name: "Javascript" },
+      { name: "React.js" },
+    ],
+    image: "/assets/work/Nike.PNG",
+    live: "https://nike-eight-weld.vercel.app/",
+    github: "https://github.com/MahmoudGado1/Nike",
+  },
 ];
+
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
   const handleSlideChange = (swiper) => {
